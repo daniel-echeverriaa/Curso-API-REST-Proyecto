@@ -1,0 +1,11 @@
+{
+  "name": "curso-api-proyecto",
+  "version": "1.0.0",
+  "description": "Curso Practico de Consumo de API REST con JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Echeverria",
+  "license": "MIT"
+}
