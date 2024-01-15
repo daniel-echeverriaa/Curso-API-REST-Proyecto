@@ -81,6 +81,7 @@ main .main-section-movies .main-section-movies-tittles button{
     font-weight: bold;
     transition: all .5s;
 }
+
 main .main-section-movies .main-section-movies-tittles button:hover{
     transition: all .5s;
     background-color: white;
@@ -88,15 +89,55 @@ main .main-section-movies .main-section-movies-tittles button:hover{
     transform: scale(1.1);
 }
 main .main-movies-images{
-    overflow-x: scroll;
+    overflow-x: hidden;
     overflow-y: hidden;
     white-space: nowrap;
     height: 241px;
     padding-bottom: 16px;
+    transition: all .5s;
 }
+/* .title{
+    font-size: 3.0rem;
+    color: white;
+    position: relative;
+    top: 50px;
+    text-align: center;
+    
+} */
 main .main-movies-images .main-img-movies{
     display: inline-block;
     margin-right: 8px;
+    
+    
+}
+.button-left-movies{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 93%;
+    bottom: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+}
+.button-rigth-movies{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 93%;
+    bottom: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: none;
+}
+#button:hover{
+    transition: all .5s;
+    background-color: gray;
+    
 }
 main .main-movies-images .movie-img{
     height: 225px;
