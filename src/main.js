@@ -5,19 +5,16 @@ const api = axios.create({
         'Content-Type': 'application/json;chasrset=utf-8',
     },
     params:{
-        'api_key':API_KEY
+        'api_key':API_KEY,
+        'language':'es',
     }
 });
-document.addEventListener("DOMContentLoaded", function () { 
-
-    
-    
-    
- });
+/* document.addEventListener("DOMContentLoaded", function () { 
+ }); */
 
 
 async function getTrendingMoviesPreview(){
-    const {data} = await api(`trending/movie/week`);
+    const {data} = await api(`trending/movie/day`);
     const movies = data.results;
 
 
@@ -51,7 +48,7 @@ async function getCategoriesPreview(){
 
         const categoryTittle = document.createElement('h3');
         categoryTittle.classList.add('category-title');
-        categoryTittle.setAttribute('id',category.name);
+        categoryTittle.setAttribute('id','id'+ category.id);
         const categoryTittleText = document.createTextNode(category.name)
 
         categoryTittle.appendChild(categoryTittleText)
@@ -60,8 +57,7 @@ async function getCategoriesPreview(){
     });
 }
 
-getTrendingMoviesPreview()
-getCategoriesPreview()
+
 
 
 

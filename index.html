@@ -7,19 +7,19 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <header>
-        <section class="header-back">
-            <a href=""><img src="./images/flecha_para_atras_.png" alt=""></a>
+        <section class="header-back inactive ">
+            <a href="" class="hidden"><img src="./images/flecha_para_atras_.png" alt="" class="hidden"></a>
         </section>
         <section class="header-search">
-            <h2>MaxiMovies</h2>
-            <h2>Accion</h2>
+            <div class="tiitle-head">
+                <h1>MaxiMovies</h2>
+                <img src="./images/png-transparent-logo-brand-com-student-creative-slate-text-logo-film-removebg-preview (1).png" alt="">
+            </div>
             <form>
                 <input type="text" placeholder="Buscar">
                 <button>🔍</button>
             </form>
         </section>
-    </header>
 
 
     <main>
@@ -28,13 +28,13 @@
                 <h2>Tendencias</h2>
                 <button>Ver mas</button>
             </div>
-            <div class="main-movies-images">
+            <div class="main-movies-images ">
                 <!-- <article class="main-img-movies">
                     <img src="./images/Poster-Flash.jpeg" alt="Imagen de una pelicula" class="movie-img">
                 </article> -->
                 
-                <button class="button-left-movies"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvtlDEOgzAQBIeP0gANT0C0ES0SBQoFyqvS5S2JLoqlEyI529hFJFyvds67PhdkPkVmf06AmXBsRBPwAEaLEANYgOZjfAH6X5BQgDYX3xloUwBkkKua3MtcRD43EM0NKNWk5uROawH2zFegssr1AXwzr4HnXwBcR9v8k0WkY8xW8mGI9Yp0l1G7EAJwML3NA9Cl2OSth0DuuT473xV462IiOgFBCZjiF2tAHhmrufjUAAAAAElFTkSuQmCC"/></button>
-                <button class="button-rigth-movies"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvt1LEKg0AMxvG/byG+WhdxaHEouIoP4eZiu+iDtgQURE4vOcymc/x+Jhcvw/nJnPO5geiEtSNqgQJ4RxN3BRqgB5rlvRF4WhANMAD1JtSEaADJTka0gCBfoLJ2YgGk9hNAXsDv6FwsgGRI/Qw8NoETUB4hKcC+i8uA0IhOw9eWtWsdOuTT+VsA1zVNDtd24H5VyId0QO512WmXIFhn/Q/M2A1ER/YHwc0fGYJeKaMAAAAASUVORK5CYII="/></button>
+                <button class="button-left-movies" id="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAK1JREFUSEvtlDEOgzAQBIeP0gANT0C0ES0SBQoFyqvS5S2JLoqlEyI529hFJFyvds67PhdkPkVmf06AmXBsRBPwAEaLEANYgOZjfAH6X5BQgDYX3xloUwBkkKua3MtcRD43EM0NKNWk5uROawH2zFegssr1AXwzr4HnXwBcR9v8k0WkY8xW8mGI9Yp0l1G7EAJwML3NA9Cl2OSth0DuuT473xV462IiOgFBCZjiF2tAHhmrufjUAAAAAElFTkSuQmCC"/></button>
+                <button class="button-rigth-movies" id="button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAKxJREFUSEvt1LEKg0AMxvG/byG+WhdxaHEouIoP4eZiu+iDtgQURE4vOcymc/x+Jhcvw/nJnPO5geiEtSNqgQJ4RxN3BRqgB5rlvRF4WhANMAD1JtSEaADJTka0gCBfoLJ2YgGk9hNAXsDv6FwsgGRI/Qw8NoETUB4hKcC+i8uA0IhOw9eWtWsdOuTT+VsA1zVNDtd24H5VyId0QO512WmXIFhn/Q/M2A1ER/YHwc0fGYJeKaMAAAAASUVORK5CYII="/></button>
                 
             </div>
         </section>
@@ -45,24 +45,9 @@
             </div>
             <div class="main-categories-list">
                 <article class="categories-list">
-                    <div class="category-container">
+                    <!-- <div class="category-container">
                       <h3 class="category-title one">Romance</h3>
-                    </div>
-                    <div class="category-container">
-                        <h3 class="category-title two">Accion</h3>
-                    </div>
-                    <div class="category-container">
-                      <h3 class="category-title three">Aventura</h3>
-                    </div>
-                    <div class="category-container">
-                      <h3 class="category-title four">Comedia</h3>
-                    </div>
-                    <div class="category-container">
-                      <h3 class="category-title five">Drama</h3>
-                    </div>
-                    <div class="category-container">
-                      <h3 class="category-title six">Musical</h3>
-                    </div>
+                    </div> -->
             </div>
         </section>
 
@@ -75,10 +60,9 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    
-    <script src="./src/main.js"></script>
-    
 
+    <script src="./src/main.js"></script>
     <script src="./src/secrets.js"></script>
+    <script src="./src/navigation.js"></script>
 </body>
 </html>
