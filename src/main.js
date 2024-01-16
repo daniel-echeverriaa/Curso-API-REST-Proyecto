@@ -6,6 +6,8 @@ const api = axios.create({
     },
     params: {
       'api_key': API_KEY,
+      'language': 'es-VE',
+
     },
   });
 /* document.addEventListener("DOMContentLoaded", function () { 
@@ -15,10 +17,11 @@ const api = axios.create({
 async function getTrendingMoviesPreview(){
     const {data} = await api(`trending/movie/day`);
     const movies = data.results;
+    console.log(data);
 
 
     movies.forEach(movie => {
-        const trendingPreviewMoviesContainer = document.querySelector('#main-section-movies .main-movies-images')
+        const trendingPreviewMoviesContainer = document.querySelector('.main-section-movies .main-movies-images')
 
         const movieContainer = document.createElement('div');
         movieContainer.classList.add('main-img-movies');
