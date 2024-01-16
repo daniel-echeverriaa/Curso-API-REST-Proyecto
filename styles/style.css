@@ -53,20 +53,22 @@ body{
     width: 30px;
 }
 .header-search h1{
-    font-size: 6.6rem;
+    font-size: 3.2rem;
     margin-bottom: 12px;
     color: black;
     font-weight: bolder;
+    margin-right: 0;
 }
 .tiitle-head {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .tiitle-head img{
-    width: 150px;
-    height: 80px;
-    margin-right: 60px;
-    margin-bottom: 12px;
+    width: 80px;
+    height: 40px;
+    
+    
 }
 .header-search h2{
     font-size: 4.2rem;
@@ -323,3 +325,7 @@ main .main-movies-images .movie-img:hover{
 .inactive{
     display: none;
 }
+
+@media (max-width: 320px) {
+   
+  }
