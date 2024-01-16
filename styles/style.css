@@ -62,16 +62,16 @@ body{
 .tiitle-head {
     display: flex;
     align-items: center;
-    justify-content: center;
+    
 }
 .tiitle-head img{
     width: 80px;
-    height: 40px;
-    
+    height: 50px;
+    margin-bottom: 12px;
     
 }
 .header-search h2{
-    font-size: 4.2rem;
+    font-size: 2.2rem;
     margin-bottom: 12px;
     color: #f72812;
     font-weight: bold;
@@ -129,7 +129,7 @@ main .main-section-movies .main-section-movies-tittles{
     margin-top: 20px;
 }
 main .main-section-movies .main-section-movies-tittles h2{
-    font-size: 4.4rem;
+    font-size: 3.2rem;
     color: #ca0000;
     
     
@@ -179,14 +179,13 @@ main .main-movies-images .main-img-movies{
     display: inline-block;
     margin-right: 36px;
     
-    
 }
 .button-left-movies{
     width: 40px;
     height: 40px;
     position: absolute;
-    right: 92%;
-    bottom: 56%;
+    right: 89%;
+    bottom: 52%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,8 +197,8 @@ main .main-movies-images .main-img-movies{
     width: 40px;
     height: 40px;
     position: absolute;
-    left: 92%;
-    bottom: 56%;
+    left: 89%;
+    bottom: 52%;
     display: flex;
     justify-content: center;
     align-items: center;
