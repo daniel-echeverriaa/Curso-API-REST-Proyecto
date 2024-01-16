@@ -1,14 +1,13 @@
 const API_KEY = 'c9aefab675b3395b00a55d32ac312945'
 const api = axios.create({
     baseURL: 'https://api.themoviedb.org/3/',
-    Headers: {
-        'Content-Type': 'application/json;chasrset=utf-8',
+    headers: {
+      'Content-Type': 'application/json;charset=utf-8',
     },
-    params:{
-        'api_key':API_KEY,
-        'language':'es',
-    }
-});
+    params: {
+      'api_key': API_KEY,
+    },
+  });
 /* document.addEventListener("DOMContentLoaded", function () { 
  }); */
 
