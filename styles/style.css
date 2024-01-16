@@ -43,36 +43,83 @@ body{
 .header-back{
     width: 100%;
     height: 80vh;
-    display: flex;
-    align-items: center;
+    
     
 }
 #header {
     
    
-    background-image: url('https://e0.pxfuel.com/wallpapers/579/745/desktop-wallpaper-movie-captain-marvel.jpg') ;
-    filter: grayscale(24%);
-    -webkit-filter: grayscale(24%);
-    -moz-filter: grayscale(24%);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.5)),
+                  url("https://e0.pxfuel.com/wallpapers/579/745/desktop-wallpaper-movie-captain-marvel.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
 }
-.header-back a img{
-    transform: rotate(180deg);
-    position: absolute;
-    top: 24px;
-    left: 24px;
+.header-back .header-arrow-back{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+.header-back .header-arrow-back img {
+    
+    
 }
 .header-back  .detail-movie{
     display: flex;
 }
 .detail-movie div img{
-    width: 180px;
-    height: 400px;
-    filter: grayscale(34%) brightness(113%) saturate(138%) contrast(104%);
--webkit-filter: grayscale(34%) brightness(113%) saturate(138%) contrast(104%);
--moz-filter: grayscale(34%) brightness(113%) saturate(138%) contrast(104%);
+    width: 170px;
+    height: 330px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out .5s;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: border 100ms ease-out 0s;
+}
+.detail-movie-section{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+.detail-movie .info-detail-movie {
+    margin-left: 12px;
+}
+.detail-movie .info-detail-movie .tittle-detail-movie .sub-tiitle-information{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.detail-movie .info-detail-movie .tittle-detail-movie .sub-tiitle-information h3{
+    color: white;
+    margin-left: 4px;
+    margin-right: 4px;
+    font-size: 1.6rem;
+    font-weight: 100;
+    
+}
+.detail-movie .info-detail-movie .tittle-detail-movie h2{
+    color: white;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+.detail-movie .info-detail-movie .text-detail-movie p{
+    color: white;
+    font-size: 1.2rem;
+    
+}
+.detail-movie .info-detail-movie .text-detail-movie h3{
+    color: white;
+    font-size: 2.0rem;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    
 }
 .header-search h1{
     font-size: 3.2rem;
