@@ -54,7 +54,7 @@ main{
     
    
     background-image: linear-gradient(rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0.5)),
-                  url("https://e0.pxfuel.com/wallpapers/579/745/desktop-wallpaper-movie-captain-marvel.jpg");
+    url("https://e0.pxfuel.com/wallpapers/579/745/desktop-wallpaper-movie-captain-marvel.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: border-box;
@@ -72,7 +72,9 @@ main{
     
 }
 .main-detail-movies  .detail-movie{
+    
     display: flex;
+    flex-wrap: nowrap;
 }
 .detail-movie div img{
     width: 170px;
@@ -89,16 +91,25 @@ main{
 .detail-movie-section{
     margin-left: 24px;
     margin-right: 24px;
+    
 }
 .detail-movie .info-detail-movie {
     margin-left: 12px;
 }
 .detail-movie .info-detail-movie .tittle-detail-movie .sub-tiitle-information{
-    display: flex;
+    display: block;
+    width: 100%;
     align-items: center;
-    flex-wrap: wrap;
+    
     margin-top: 8px;
     margin-bottom: 8px;
+}
+.detail-movie .info-detail-movie .tittle-detail-movie .sub-tiitle-information .genre{
+    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 .detail-movie .info-detail-movie .tittle-detail-movie .sub-tiitle-information h3{
     color: white;
@@ -323,6 +334,7 @@ main .movie-container .movie-img:hover{
     margin-top: 0px;
     display: flex;
     flex-direction: column;
+    text-align: center;
     
 }
 .main-categories .main-categories-tittle{
@@ -336,7 +348,7 @@ main .movie-container .movie-img:hover{
     font-size: 2.4rem;
 }
 .category-container {
-    width: 46%;
+    width: 150px;
     border-radius: 4px;
     box-shadow: rgba(0, 0, 0, 0.69) 0px 16px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
     cursor: pointer;
@@ -347,12 +359,13 @@ main .movie-container .movie-img:hover{
     transition: all .5s;
     display: flex;
     align-items: center;
-    
+    text-align: center;
   }
 .categories-list{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     
 }
   .category-title{
@@ -448,10 +461,38 @@ main .movie-container .movie-img:hover{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.trends-section .trends-images-movies img{
+    height: 225px;
+    min-height: 225px;
+    max-height: 225px;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.69) 0px 26px 30px -10px, rgba(0, 0, 0, 0.73) 0px 16px 10px -10px;
+    cursor: pointer;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
+    transition-timing-function: ease-out .5s;
+    -webkit-font-smoothing: subpixel-antialiased;
+    transition: border 100ms ease-out 0s;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
 }
 .trends-section .trends-images-movies .section-movies-trends{
-    margin-right: 24px;
-    margin-left: 24px;
+    
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 .trends-section .trends-images-movies .section-movies-trends img{
     border-radius: 4px;

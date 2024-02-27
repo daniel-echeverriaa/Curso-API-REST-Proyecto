@@ -72,6 +72,10 @@ function moviePage(){
     header_search_image.classList.add('inactive')
     header_search.classList.add('inactive')
     arrow_back.classList.add('inactive')
+    const [_, movieid] = location.hash.split('=');
+    getMoviesBySearch(movieid)
+
+    getMovieById(movieid)
 
     
 }

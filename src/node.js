@@ -27,3 +27,9 @@ const arrow_back = document.querySelector('.category-arrow-back')
 const search_container = document.querySelector('.search-section .search-container')
 
 const trends_images_movies = document.querySelector('.trends-section .trends-images-movies')
+
+
+const movie_detail_title = document.querySelector('.info-detail-movie .tittle-detail-movie h2')
+const movie_detail_img = document.querySelector('.detail-movie-section detail-movie detail-movie img')
+const movie_detail_info = document.querySelector('.detail-movie .info-detail-movie .text-detail-movie p ')
+const movie_detail_genre = document.querySelector('.info-detail-movie .sub-tiitle-information .genre')
