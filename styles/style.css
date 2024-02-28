@@ -323,11 +323,7 @@ main .movie-container .movie-img::after{
     transition: border 300ms ease-out 0s;
 }
 main .movie-container .movie-img:hover{
-    border-radius: 4px;
-    border: 6px solid #ca0000;
-    inset: 0px;
-    content: "";
-    transition: border 300ms ease-out 0s;
+    
 
 } 
 .main-categories {
